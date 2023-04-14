@@ -1,0 +1,193 @@
+/* Header */
+#header {
+  background-color:  #008080;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  height: 300px;
+  width: 150px;
+  margin-top: 200px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff8c00;
+}
+
+.header-text {
+  color: #fff;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.header-text span {
+  color: #ff8c00;
+}
+
+/* About section */
+#about {
+  background-color: #ADD8E6;
+  padding: 80px 0;
+}
+
+.about-col-1 img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  height: 400px;
+  width: 400px;
+}
+
+.sub-title {
+  color: #800080;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tab-titles {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.tab-links {
+  color: #800080;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 30px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.tab-links:hover {
+  color: #ff8c00;
+}
+
+.active-link {
+  color: #800080;
+}
+
+.tab-contents {
+  display: none;
+  margin-bottom: 50px;
+}
+
+.active-tab {
+  display: block;
+}
+
+.tab-contents li {
+  margin-bottom: 20px;
+}
+
+.tab-contents span {
+  color: #800080;
+  font-weight: bold;
+}
+
+/* Contact section */
+#contact {
+  background-color: #333;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.contact-left {
+  margin-right: 50px;
+}
+
+.contact-left h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.contact-left p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right form label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-right form input,
+.contact-right form textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #
+.container {
+  text-align: center;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  animation: bounce 1s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+}

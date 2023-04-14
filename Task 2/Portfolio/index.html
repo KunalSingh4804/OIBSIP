@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylkun.css">
+    <script src="https://kit.fontawesome.com/24604e28e4.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="ii.jpeg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hello,<br>I'm <span>Kunal Singh</span></br></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------about---------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="bgimg.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+
+                    <p>I am a B.Tech IT student with interest in web development. I have learnt programming languages such as Java, Python as well as database management and web development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certifications</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>Intermediate Level with 4 stars on Hackerrank.</br></li>
+                            <li><span>Java</span><br>Beginner.</br></li>
+                            <li><span>Web Development</span><br>Beginner.</br></li>
+                            
+                            <li><span>Team leader of Event Management</span><br>At NIET, E-Cell</br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>B.Tech from Noida Institute Of Engineering And Technology, Greater Noida.</br></li>
+                            <li><span>2021</span><br>12th from Sarvodaya Bal Vidyalaya, Dilshad Garden, New Delhi.</br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                    	<ul>
+                    		<li><span><a href="https://coursera.org/share/a126c009369117e7f9b608080026c039" class="clickme danger" target="_blank">Object Oriented Programming Using Java         </a></span></li>
+                    		<li><br><span><a href="https://coursera.org/share/4c1e6320cebf520b28eba2f143c35445" class="clickme danger" target="_blank">Java Programming: Arrays, Lists, and Structured
+                             Data</a></span></br></li>
+                             <li><br><span><a href="https://coursera.org/share/fac3d060ffa8d26e08b0002bfc860e2e" class="clickme danger" target="_blank">Python Basics</a></span></br></li>
+                             <li><br><span><a href="https://coursera.org/share/23f2e2cd8bde8d128f460ec41e2db12f" class="clickme danger" target="_blank">Python for Data Science, AI & Development</a></span></br></li>
+                             <li><br><span><a href="https://coursera.org/share/3d63b3ed00ba42feea42dad256b7628f" class="clickme danger" target="_blank">Introduction to Artificial Intelligence (AI)</a></span></br></li>
+                             <li><br><span><a href="https://coursera.org/share/0bfbb683a2aee5884d9cf74ebdb0fdcf" class="clickme danger" target="_blank">Human-Centered Design for Inclusive Innovation</a></span></br></li>
+                             <li><br><span><a href="https://www.coursera.org/account/accomplishments/verify/9E9YSSV94SUQ" class="clickme danger" target="_blank">Create a Basic Mini-Map in Unity </a></span></br></li>
+                             <li><br><span><a href="https://coursera.org/share/9d729f34f0d5d471a7d4541f7262c60f" class="clickme danger" target="_blank">Databases and SQL for Data Science with Python </a></span></br></li>
+
+                    	</ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------contact------------------->
+    <div id="contact">
+    	<div class="container">
+    		<div class="row">
+    			<div class="contact-left">
+    				<h1 class="sub-title">Contact Information</h1>
+    				<p><br><i class="fa-sharp fa-solid fa-paper-plane fa-beat-fade"></i>    kunalsingh839469@gmail.com</br></p>
+    				<p><br><i class="fa-solid fa-square-phone fa-beat-fade"></i>    +91 9318324804</br></p>
+    				<div class="social-icons">
+    					<br><a href="https://www.linkedin.com/in/kunal-singh-087272226"><i class="fa-brands fa-linkedin fa-bounce"></i></a></br>
+    				</div>
+    				<a href="kunal.pdf" download class="btn">Download Resume</a>
+    			</div>
+    			
+    		</div>
+    		
+    	</div>
+    	<div class="info">
+    		<p>Oasis Infobyte Internship</p>
+    	</div>
+    </div>
+
+
+<script>
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+
+</script>
+
+</body>
+</html>
