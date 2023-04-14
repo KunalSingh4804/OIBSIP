@@ -105,44 +105,22 @@
       const unitFrom = document.getElementById("unit_from").value;
       const unitTo = document.getElementById("unit_to").value;
       
-      let convertedTemp;
-      let converted
-      let convertedTemp;
-      let convertedUnit;
+            let converted;
 
       if (unitFrom === "F" && unitTo === "C") {
-        convertedTemp = (temperature - 32) * 5/9;
-        convertedUnit = "Celsius";
+        converted = (temperature - 32) * 5 / 9;
       } else if (unitFrom === "C" && unitTo === "F") {
-        convertedTemp = (temperature * 9/5) + 32;
-        convertedUnit = "Fahrenheit";
+        converted = (temperature * 9 / 5) + 32;
       } else {
-        document.getElementById("result").innerHTML = "Invalid conversion";
-        return;
+        converted = temperature;
       }
 
-      const result = document.getElementById("result");
-      result.innerHTML = `${temperature} ${unitFrom} is ${convertedTemp.toFixed(2)} ${unitTo}`;
-      result.style.animation = "fadeInResult 0.5s ease-in-out";
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeInResult {
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+      // Display the result
+      const resultElement = document.getElementById("result");
+      if (isNaN(converted)) {
+        resultElement.innerText = "Invalid input";
+      } else {
+        resultElement.innerText = `${temperature} ${unitFrom} is equal to ${converted.toFixed(2)} ${unitTo}`;
       }
     }
   </script>
